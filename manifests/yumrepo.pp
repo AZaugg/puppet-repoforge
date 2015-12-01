@@ -35,12 +35,12 @@
 #
 define repoforge::yumrepo (
   $repos,
-  $repo_shortname = $name,
   $baseurl,
   $mirrorlist,
   $enabled,
   $includepkgs,
   $exclude,
+  $repo_shortname = $name,
 ) {
   $reponame = $repos[$title]
 
